@@ -1,0 +1,162 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    padding: 10px;
+
+    .nav-l {
+        display: flex;
+        gap: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 43, 71);
+        font-weight: 900;
+    }
+    .button-56 {
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-56:after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    .button-56:hover:after {
+        transform: translate(0, 0);
+    }
+
+    .button-56:active {
+        background-color: #ffdeda;
+        outline: 0;
+    }
+
+    .button-56:hover {
+        outline: 0;
+    }
+
+    @media (min-width: 768px) {
+        .button-56 {
+            padding: 0 40px;
+        }
+    }
+}
+
+.banner {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('img/valentin-petrov-m-mal-01.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: bgZoomIn 4s ease-in-out 1 forwards;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('img/after.png');
+    background-size: cover;
+    background-position: top;
+    transform: scale(2);
+    animation: bgZoomOut 3s ease-in-out 1 forwards;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes bgZoomIn {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes bgZoomOut {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+    }
+}
+
+svg path {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 0.5;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+
+    animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 800;
+    }
+
+    50% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
