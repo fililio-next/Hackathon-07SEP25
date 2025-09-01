@@ -17,11 +17,13 @@
         display: flex;
         gap: 20px;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: rgb(0, 43, 71);
         font-weight: 900;
     }
+
     .button-56 {
         align-items: center;
         background-color: #fee6e3;
@@ -89,6 +91,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+
 }
 
 .banner::before {
@@ -134,6 +137,13 @@
     to {
         transform: scale(2);
     }
+}
+
+hr {
+    height: 50px;
+    background: linear-gradient(45deg, #333333, #a7a7a7);
+    border-color: transparent;
+    border: 0px;
 }
 
 svg path {
