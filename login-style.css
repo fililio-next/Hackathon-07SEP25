@@ -1,8 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 body {
     background-color: #1E1E20;
     color: #717171;
-    font-family: Inter;
-    margin: 0;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -11,53 +15,18 @@ body {
     align-items: center;
     position: relative;
 }
-body::after,
-body::before {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    content: '';
-    background-color: #717171;
-    top: 0;
-    right: 0;
-    border-radius: 10px 30px 600px 100px;
-    filter: blur(100px);
-    pointer-events: none;
-}
-body::after {
-    top: unset;
-    right: unset;
-    bottom: 0;
-    left: 0;
-    border-radius: 100px 30px 600px 100px;
-}
-* {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+
 .logo img {
-    border-radius: 20%;
+    border-radius: 30%;
     width: 90px;
 }
-.logo {
-    width: 60px;
-    height: 60px;
-    margin: auto;
-    background-color: #2C2C2E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px #0004;
-    margin-bottom: 30px;
-}
+
 h1 {
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
-    font-size: x-large;
     margin-bottom: 10px;
 }
+
 .text-white {
     color: #fff;
 }
@@ -115,12 +84,7 @@ input + p {
     font-size: small;
     text-align: left;
 }
-.sso {
-    margin-bottom: 30px;
-}
-.sso + p {
-    font-size: small;
-}
+
 input:invalid:not(:placeholder-shown) {
     border-color: red;
     background-image: url(checked_red.png);

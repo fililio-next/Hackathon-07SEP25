@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>LUN DEV</title>
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login-style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>LUN DEV</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login-style.css">
+    </head>
 
-<body>
-    <header>
-        <div class="logo">
+    <body>
+
+        <div class="form">
+            <div class="logo">
             <img src="./img/logo.jpg" alt="">
         </div>
         <h1>Hi!</h1>
         <p>First time here? <span class="text-white">Sign up for free</span></p>
-    </header>
-    <form action="login.html">
+        <form action="login.html">
 
-        <input 
-        type="email" 
-        name="email" 
-        placeholder="Your email"
-        required>
+            <input type="email" name="email" placeholder="Your email" required>
 
-        <input 
-        type="password" 
-        name="password" 
-        placeholder="Password"
-        minlength="6"
-        required>
-        <p>Password must be at least 6 characters</p>
+            <input type="password" name="password" placeholder="Password" minlength="6" required>
+            <p>Password must be at least 6 characters</p>
 
-        <button type="submit">Sign in</button>
-    </form>
-</body>
+            <button type="submit">Sign in</button>
+        </form>
+        </div>
+        
+    </body>
 
 </html>
