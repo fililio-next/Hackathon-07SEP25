@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -10,7 +11,6 @@
     position: fixed;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
     padding: 10px;
 
     .nav-l {
@@ -29,7 +29,6 @@
         background-color: #fee6e3;
         border: 2px solid #111;
         border-radius: 8px;
-        box-sizing: border-box;
         color: #111;
         cursor: pointer;
         display: flex;
@@ -140,7 +139,7 @@
 }
 
 hr {
-    height: 50px;
+    height: 80px;
     background: linear-gradient(45deg, #333333, #a7a7a7);
     border-color: transparent;
     border: 0px;
@@ -161,16 +160,70 @@ svg path {
         stroke-dashoffset: 1000;
     }
 
-    90% {
+    80% {
         fill: transparent;
-    }
-
-    95%{
-        text-shadow: #111;
     }
 
     100% {
         fill: white;
         stroke-dashoffset: 0;
+    }
+}
+
+.three {
+    z-index: 10;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;    
+    /* background-image: url("./img/Lucid_Realism_Firstperson_POV_cinematic_video_The_person_appli_0.jpg"); */
+    background-image: url("./img/bg/6.jpg");
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(129, 129, 129); */
+        color: rgb(0, 20, 56);
+        border-radius: 10%;
+        padding: 20px;
+        gap: 20px;
+        font-family: 'Fredoka One';
+        font-weight: 400;
+        font-size: 20px;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+
+    img {
+        margin-top: 30px;
+        width: 300px;
+        height: 150px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        border-radius: 5%;
+    }
+}
+
+.footer {
+    background: linear-gradient(45deg, #0b1222, #0e234e, #0b1222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 5px;
+    padding: 10px;
+
+    .preteam {
+        color: #cfcfcf;
+    }
+
+    .team {
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
     }
 }
