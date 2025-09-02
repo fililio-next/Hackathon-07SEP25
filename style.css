@@ -113,7 +113,7 @@
     background-image: url('img/after.png');
     background-size: cover;
     background-position: top;
-    transform: scale(2);
+    transform: scale(1.2);
     animation: bgZoomOut 3s ease-in-out 1 forwards;
     z-index: -1;
     pointer-events: none;
@@ -149,20 +149,24 @@ hr {
 svg path {
     fill: transparent;
     stroke: #fff;
-    stroke-width: 0.5;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
+    stroke-width: 0.1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 
     animation: textAnimation 4s ease-in-out 1 forwards;
 }
 
 @keyframes textAnimation {
     0% {
-        stroke-dashoffset: 800;
+        stroke-dashoffset: 1000;
     }
 
-    50% {
+    90% {
         fill: transparent;
+    }
+
+    95%{
+        text-shadow: #111;
     }
 
     100% {
